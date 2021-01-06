@@ -1,0 +1,16 @@
+
+The two files ``test_utils.c'' and ``test_utils.h'' provide a simple
+testing framework that can easily be integrated into a program
+being written in the C programming language. It provides a framework
+for executing a suite of tests as well as testing how procedures
+manage dynamic allocations with ``malloc'' and friends. Finally, it
+provides a way of testing whether or not assertions are thrown at
+appropriate times when passing unsupported parameters to procedures
+(for example, when the NULL pointer is passed to a procedure that
+accepts a pointer but where the NULL pointer does not have any
+useful meaning that can be associated with it, such as a procedure
+that is meant to only mutate the memory behind the pointer).
+
+See the ``example'' directory to see how the testing framework can be
+integrated into a module to create a reusable library with tests
+included. 

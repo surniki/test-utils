@@ -1,0 +1,12 @@
+
+This is a demonstration of a testing framework that was made in order
+to make programming in C easier and less error prone. It includes a
+simple way of constructing an executable that runs a test suite that
+is meant to be handmade by the author, as well as tools for
+determining the number of memory allocations currently active and
+whether or not an assertion was thrown when bad inputs are given to
+procedures. The implementation of this testing framework is defined in
+the files test_utils.c and test_utils.h. The example code to test is a
+dynamically allocated array that is defined in darray.c and
+darray.h. The test suite for that example code is given in
+test_darray.c and test_darray.h.
